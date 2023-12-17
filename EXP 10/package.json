@@ -1,0 +1,11 @@
+{
+  "name": "exp-10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server -p 8090"
+  },
+  "author": "",
+  "license": "ISC"
+}

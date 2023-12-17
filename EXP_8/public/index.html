@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #4285f4;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        button {
+            background-color: #4285f4;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1a73e8;
+        }
+
+        #video-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        iframe {
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Greeting Page!</h1>
+    <p>This is a simple greeting message.</p>
+
+    <button onclick="playRickRoll()">Don't Click Me</button>
+
+    <div id="video-container">
+        <iframe id="rickroll-video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+    </div>
+
+    <script>
+        function playRickRoll() {
+            var videoContainer = document.getElementById("video-container");
+            var button = document.querySelector("button");
+
+            // Hide the button and show the video container
+            button.style.display = "none";
+            videoContainer.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
